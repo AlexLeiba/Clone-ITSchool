@@ -1,0 +1,188 @@
+.section1 {
+  background-color: var(--bg-primary);
+  background-image: url("https://www.izodeco-construct.com/wp-content/uploads/2018/01/header-contact-us.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+}
+
+.messageIcon {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background-image: url("https://icones.pro/wp-content/uploads/2021/05/icone-messager-noir.png");
+  background-color: var(--text-light);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+
+}
+.messageIcon:hover{
+  background-color: var(--color-secondary);
+}
+
+.section1 h1 {
+  font-size: var(--fs-large);
+  color: var(--text-light);
+  margin-top: 160px;
+}
+
+.containerTable {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container1 li,
+.container2 li {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container1 li,
+.container1 {
+  border-bottom: solid 1px rgb(204, 204, 204);
+  position: relative;
+}
+.container1 li,
+.container2 li {
+  border-bottom: solid 1px rgb(204, 204, 204);
+  position: relative;
+}
+.container1 {
+  width: 550px;
+}
+.container2 {
+  width: 550px;
+}
+
+@media(max-width: 1150px){
+  .container1 {
+  width:400px;
+}
+.container2 {
+  width: 400px;
+}
+}
+
+@media(max-width: 860px){
+.containerTable{
+  flex-direction: column;
+  justify-content: center;
+}
+  .container1 {
+  width:100%;
+ 
+}
+.container2 {
+  width: 100%;
+ 
+}
+}
+.section2 h2 {
+  text-align: center;
+  color: var(--text-dark);
+ margin-top: 30px;
+ 
+  font-size: var(--fs-medium);
+}
+
+.section2 p {
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Container table */
+
+.containerTable{
+  margin-top: 60px;
+}
+
+.paragraf .material-icons {
+  color: var(--bg-dark);
+  position: absolute;
+  left: -5px;
+  top: 20px;
+}
+
+.container1 a, .container2 a {
+  color: var(--text-dark);
+}
+
+.locatii h2 {
+  margin: 60px;
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-dark);
+}
+
+/* Section Locations */
+.locatii{
+  min-height: 100vh;
+  width: 100%;
+}
+.colums {
+  display: flex;
+  justify-content: space-between;
+}
+.column1 div,
+.column2 div {
+  width: 230px;
+  height: 30px;
+  padding: 3px;
+  border-bottom: 3px solid var(--bg-secondary);
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.colums img {
+  width: auto;
+  height: 470px;
+}
+
+
+/* Mobile */
+@media(max-width: 1150px){
+  .colums img {
+    width:auto;
+    height: 250px;
+  }
+}
+
+@media(max-width: 860px){
+.colums img{
+  height: auto;
+  width: 250px;
+}
+
+}
+
+@media(max-width:780px){
+  .colums{
+  flex-direction: column;
+
+}
+.column1 div,
+.column2 div{
+  width: 100%;
+}
+
+.colums img{
+  height: auto;
+  width: 480px;
+}
+}
+
+@media(max-width:500px){
+  .colums img{
+  height: auto;
+  width: 250px;
+}
+}

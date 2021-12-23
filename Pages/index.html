@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Css/home.css" />
+    <link rel="stylesheet" href="../Css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Oswald&family=PT+Serif:ital,wght@0,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Home</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="Container">
+          <div class="navContainer">
+            <a href="#">
+              <img
+                src="https://www.itschool.ro/img/logo-white.png"
+                alt="logo"
+                title="Home"
+              />
+            </a>
+
+            <!-- la anumita dimensiune spanul va fi al foilea copil al Containerului -->
+            <span class="material-icons menu-icon"> list </span>
+
+            <ul>
+              <li class="courses">
+                <a href="./courses.html">
+                  COURSES
+                  <span class="material-icons arrow-icon"> expand_more </span>
+                </a>
+
+                <div class="dropCourses">
+                  <p>
+                    <a href="https://www.itschool.ro/cursuri-it-timisoara.php">
+                      Timișoara</a
+                    >
+                  </p>
+                  <p>
+                    <a href="https://www.itschool.ro/cursuri-it-oradea.php"
+                      >ORADEA</a
+                    >
+                  </p>
+                  <p>
+                    <a href="https://www.itschool.ro/cursuri-it-arad.php"
+                      >
+Brașov</a
+                    >
+                  </p>
+                  <p>
+                    <a
+                      href="https://www.itschool.ro/centru-acreditat-international.php"
+                      >ARAD</a
+                    >
+                  </p>
+                  <p>
+                    <a href="https://www.itschool.ro/cursuri-it-brasov.php"
+                      >CLUJ-NAPOCA</a
+                    >
+                  </p>
+                  <p>
+                    <a href="https://www.itschool.ro/cursuri-it-sibiu.php"
+                      >SIBIU</a
+                    >
+                  </p>
+                  <p>
+                    <a href="https://www.itschool.ro/cursuri-it-bucuresti.php"
+                      >București</a
+                    >
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a href="./about.html">About</a>
+              </li>
+
+              <li class="certification">
+                <a href="./certification.html"
+                  >Certification
+                  <span class="material-icons arrow-icon"> expand_more </span>
+                </a>
+
+                <div class="dropCertification">
+                  <p><a href="./certification.html">CERTIFICARILE</a></p>
+                  <p><a href="./certification.html">PEARSON VUE</a></p>
+                  <p><a href="./certification.html">CERTIPRIME</a></p>
+                </div>
+              </li>
+
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="WelcomeContainer">
+        <div class="Container">
+          <div class="homeIntro">
+            <h1>Bine ai venit</h1>
+            <p>
+              În acceleratorul de cariere în
+              <span class="acolada">{</span>Front-End-Development, Grafic
+              Design, si multe altele <span class="acolada">}</span>
+            </p>
+            <p>
+              Cursuri IT pentru începători cu certificare:
+              <img
+                src="https://www.itschool.ro/temp/L-micro.png"
+                alt="miscrosoft"
+              />
+              <img src="https://www.itschool.ro/temp/L-adobe.png" alt="adobe" />
+              <img src="https://www.itschool.ro/temp/L-apple.png" alt="apple" />
+              <img
+                src="https://www.itschool.ro/temp/siglame.png"
+                alt="minister"
+              />
+            </p>
+            <a class="button" href="./courses.html">Vezi cursurile</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="courses">
+        <div class="Container">
+          <h2>Calendar cursuri</h2>
+
+          <div class="coursesContainer">
+            <div class="Wrapper">
+              <div class="card">
+                <h2>Program C++</h2>
+                <div class="cardComponents">
+                  <p class="dateContainer">
+                    <span class="material-icons"> calendar_month </span>
+                    în curând
+                  </p>
+
+                  <p><span class="material-icons"> near_me </span> Online</p>
+                </div>
+                <div class="borderC"></div>
+              </div>
+            </div>
+
+            <div class="Wrapper">
+              <div class="card">
+                <h2>Testare Software</h2>
+                <div class="cardComponents">
+                  <p class="dateContainer">
+                    <span class="material-icons"> calendar_month </span>
+                    ianuarie 22
+                  </p>
+                  <p><span class="material-icons"> near_me </span> Online</p>
+                </div>
+                <div class="borderTest"></div>
+              </div>
+            </div>
+
+            <div class="Wrapper">
+              <div class="card">
+                <h2>Programare Java</h2>
+                <div class="cardComponents">
+                  <p class="dateContainer">
+                    <span class="material-icons"> calendar_month </span>
+                    ianuarie 22
+                  </p>
+                  <p><span class="material-icons"> near_me </span> Online</p>
+                </div>
+                <div class="borderJava"></div>
+              </div>
+            </div>
+
+            <div class="Wrapper">
+              <div class="card">
+                <h2>Web Development</h2>
+                <div class="cardComponents">
+                  <p class="dateContainer">
+                    <span class="material-icons"> calendar_month </span>
+                    în curând
+                  </p>
+                  <p><span class="material-icons"> near_me </span> Online</p>
+                </div>
+                <div class="borderWeb"></div>
+              </div>
+            </div>
+
+            <div class="Wrapper">
+              <div class="card">
+                <h2>Phyton</h2>
+                <div class="cardComponents">
+                  <p class="dateContainer">
+                    <span class="material-icons"> calendar_month </span>
+                    ianuarie 22
+                  </p>
+                  <p><span class="material-icons"> near_me </span> Online</p>
+                </div>
+                <div class="borderPhyton"></div>
+              </div>
+            </div>
+
+            <div class="Wrapper">
+              <div class="card">
+                <h2>Grafic Design</h2>
+                <div class="cardComponents">
+                  <p class="dateContainer">
+                    <span class="material-icons"> calendar_month </span>
+                    februarie 13
+                  </p>
+                  <p><span class="material-icons"> near_me </span> Online</p>
+                </div>
+                <div class="borderDesign"></div>
+              </div>
+            </div>
+
+            <div class="Wrapper">
+              <div class="card">
+                <h2>Ui / Ux</h2>
+                <div class="cardComponents">
+                  <p class="dateContainer">
+                    <span class="material-icons"> calendar_month </span>
+                    ianuarie 22
+                  </p>
+                  <p><span class="material-icons"> near_me </span> Online</p>
+                </div>
+                <div class="borderUi"></div>
+              </div>
+            </div>
+
+            <div class="Wrapper">
+              <div class="card">
+                <h2>Agile Scrum</h2>
+                <div class="cardComponents">
+                  <p class="dateContainer">
+                    <span class="material-icons"> calendar_month </span>
+                    februarie 13
+                  </p>
+                  <p><span class="material-icons"> near_me </span> Online</p>
+                </div>
+                <div class="borderAgile"></div>
+              </div>
+            </div>
+          </div>
+          <div class="buttonContainer">
+            <a href="./courses.html"
+              ><div class="buttonCourses">VEZI TOATE CURSURILE</div></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="about-us">
+        <div class="Container">
+          <h2>Ce este It School?</h2>
+          <p>
+            IT School este o comunitate educațională de IT, locul unde
+            pasionații acestui domeniu se întâlnesc cu viitorii profesioniști.
+            Timp de peste 7 ani, am construit alături de trainerii IT School un
+            mediu de învățare specializat pentru toți cei care își doresc să
+            descopere oportunitățile acestui domeniu. Ești pregătit să faci
+            parte din comunitatea IT School?
+          </p>
+
+          <div class="containerImages">
+            <div class="wrapper">
+              <div class="img">
+                <img src="https://www.itschool.ro/temp/itschool-3.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="img">
+                <img src="https://www.itschool.ro/temp/web3.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="img">
+                <img src="https://www.itschool.ro/temp/itschool-1.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="img">
+                <img src="https://www.itschool.ro/temp/itschool-6.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img src="https://www.itschool.ro/temp/itschool-5.jpg" alt="" />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div class="img">
+                <img src="https://www.itschool.ro/temp/itschool-2.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="Parteners">
+        <div class="Container">
+          <h2>Parteneri</h2>
+
+          <div class="ContainerParteners">
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/toluna.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/123formbuilder.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/nagarro.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/sv.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/dreamproduction.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/ness.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/instapage.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/amdaris.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/fortech.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/visma.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/mobiversal.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/homepage/imobiliarert.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/fix/nokia.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/fix/vodafone.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/fix/hella.png"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="wrapper">
+              <div>
+                <img
+                  src="https://www.itschool.ro/img/parteneri/fix/ccia.png"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="Container"></div>
+      </section>
+    </main>
+
+    <section class="footer">
+      <div class="Container">
+        <div class="containerLocation">
+          <div>
+            <h3>Linkuri Utile</h3>
+            <p>
+              <a href="https://www.itschool.ro/termeni-conditii.php">
+                Termeni si Condiții</a
+              >
+            </p>
+            <p><a href="https://www.edu.ro/">Ministerul Educației</a></p>
+            <p><a href="https://www.certiprime.ro/">Certiprime</a></p>
+            <p><a href="https://www.anpc.gov.ro/">ANPC</a></p>
+            <p><a href="http://www.anc.edu.ro/">ANC</a></p>
+          </div>
+          <div>
+            <h3>Contact</h3>
+            <p>Mob: +40 737 880 420</p>
+            <p>Email: office@itschool.ro</p>
+          </div>
+          <div>
+            <h3>Locații</h3>
+            <p>Timișoara</p>
+            <p>Cluj-Napoca</p>
+            <p>Arad</p>
+            <p>Oradea</p>
+            <p>Brașov</p>
+            <p>Sibiu</p>
+            <p>București</p>
+          </div>
+          <div class="certificari">
+            <h3>Certificări</h3>
+            <p>
+              <img
+                src="https://www.itschool.ro/temp/L-micro.png"
+                alt="ITschool"
+              />
+            </p>
+            <p>
+              <img src="https://www.itschool.ro/temp/L-adobe.png" alt="adobe" />
+            </p>
+            <p>
+              <img src="https://www.itschool.ro/temp/L-apple.png" alt="apple" />
+            </p>
+            <p>
+              <img
+                src="https://www.itschool.ro/temp/siglame.png"
+                alt="minister"
+              />
+            </p>
+          </div>
+        </div>
+        <div>
+          <span class="imgIcons">
+            <div class="paragraf">
+              <a href="https://www.facebook.com/itschool.ro/">
+                <img
+                  src="https://img.icons8.com/fluency/48/000000/facebook-new.png"
+                />
+              </a>
+              <p>Facebook</p>
+            </div>
+
+            <div class="paragraf">
+              <a
+                href="https://www.youtube.com/channel/UCrnVBDc5n5bPwgKxOTBnEkA"
+              >
+                <img
+                  src="https://img.icons8.com/flat-round/64/000000/youtube-play.png"
+              /></a>
+              <p>Youtube</p>
+            </div>
+
+            <div class="paragraf">
+              <a href="https://www.instagram.com/itschoolro/">
+                <img
+                  src="https://img.icons8.com/fluency/48/000000/instagram-new.png"
+                />
+              </a>
+              <p>Instagram</p>
+            </div>
+          </span>
+        </div>
+
+        <div class="scrollIcon"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="Container">
+        <div class="footerContainer">
+          <p>Alexandru Lapteacru © 2021. Toate drepturile rezervate.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../script.js"></script>
+  </body>
+</html>

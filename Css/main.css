@@ -1,0 +1,345 @@
+/* variables */
+
+:root {
+  --text-dark: rgb(0, 37, 78);
+  --text-light: rgb(255, 255, 255);
+  --color-secondary: rgb(255, 138, 43);
+
+  --bg-dark: rgb(4, 36, 143);
+  --bg-primary: rgb(23, 28, 44);
+  --bg-secondary: rgb(212, 246, 247);
+
+  --fs-large: 3.5rem;
+  --fs-medium: 2rem;
+  --fs-small: 1.5rem;
+}
+
+/* Reset default Css + Body */
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--text-light);
+}
+h2 {
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-light);
+}
+
+ul {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container */
+.Container {
+  min-width: 350px;
+  max-width: 1200px;
+  margin: auto;
+  padding: 16px;
+}
+
+/* Nav */
+nav {
+  background-color: var(--bg-primary);
+  position: fixed;
+  top: -20px;
+  width: 100%;
+
+  z-index: 1;
+  height: 100px;
+}
+
+nav .navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+}
+ul li {
+  padding: 10px;
+  color: var(--text-light);
+  position: relative;
+}
+
+nav img {
+  width: 160px;
+  height: auto;
+  cursor: pointer;
+}
+
+nav a {
+  color: var(--text-light);
+  padding: 15px;
+}
+nav a:hover {
+  color: var(--color-secondary);
+}
+
+.navContainer .arrow-icon {
+  position: absolute;
+  top: 10px;
+  right: 4px;
+  cursor: pointer;
+}
+
+/* drop Menu */
+nav .dropCourses {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  background-color: var(--bg-dark);
+  z-index: 1;
+  padding: 5px;
+  display: none;
+  width: 130px;
+  height: 175px;
+}
+
+nav .dropCourses p {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+nav .dropCertification {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  width: 150px;
+  height: 80px;
+  background-color: var(--bg-dark);
+  z-index: 1;
+  padding: 5px;
+  padding-top: 5px;
+  text-align: start;
+  display: none;
+}
+
+nav .dropCertification p {
+  padding-top: 5px;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+/* Se selecteaza intregul parinte, se afiseaza */
+nav .courses:hover .dropCourses {
+  display: block;
+}
+nav .certification:hover .dropCertification {
+  display: block;
+}
+/* .............................. ...........*/
+
+
+/* Menu-Mobile */
+
+@media (max-width: 800px) {
+  nav ul {
+    display: none;
+  }
+
+  nav .menu-icon {
+    color: var(--text-light);
+    cursor: pointer;
+  }
+  nav .menu-icon:hover {
+    color: var(--color-secondary);
+  }
+
+  nav .menu-icon {
+    position: relative;
+  }
+
+  nav .arrow-icon {
+    display: none;
+  }
+
+  nav .courses:hover .dropCourses {
+    display: none;
+  }
+
+  nav .certification:hover .dropCertification {
+    display: none;
+  }
+
+  nav li a {
+    color: var(--text-dark);
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+  }
+
+  nav .dropDown-menu {
+    display: block;
+    width: 100%;
+
+    position: fixed;
+    top: 72px;
+    left: 0;
+
+    background-color: var(--bg-secondary);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+  }
+}
+
+@media (min-width: 800px) {
+  nav .menu-icon {
+    display: none;
+  }
+}
+
+
+/* main */
+
+main {
+  flex-grow: 2;
+}
+
+/* Footer */
+footer {
+  background-color: var(--bg-primary);
+}
+
+footer .footerContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+
+.footerContainer p {
+  color: var(--text-light);
+}
+
+.containerLocation img {
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: var(--bg-primary);
+}
+.containerLocation {
+  display: flex;
+  justify-content: space-between;
+  color: var(--text-light);
+  margin-top: 80px;
+  padding: 50px;
+}
+
+
+/* Mobile */
+@media (max-width: 650px) {
+  .containerLocation {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0;
+  }
+  .containerLocation h3 {
+    font-size: 25px;
+  }
+}
+
+.containerLocation div {
+  border-left: solid 2px var(--color-secondary);
+  padding: 10px;
+  height: 100%;
+}
+
+/* Alinierea pe verticala elementelor inline */
+.containerLocation .certificari img {
+  height: 20px;
+  width: auto;
+  vertical-align: middle;
+}
+.containerLocation h3 {
+  color: var(--color-secondary);
+  margin-bottom: 20px;
+}
+
+.imgIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgIcons img {
+  height: 20px;
+  width: auto;
+}
+
+.imgIcons .paragraf {
+  color: var(--text-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.imgIcons .paragraf a {
+  padding: 2px;
+}
+.imgIcons {
+  padding-bottom: 10px;
+  border-bottom: dotted 2px var(--bg-secondary);
+}
+
+.imgIcons p {
+  color: var(--text-light);
+}
+
+
+/* Scroll button */
+
+.scrollIcon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--bg-secondary);
+  background-image: url("http://cdn.onlinewebfonts.com/svg/img_118804.png");
+  background-position: top;
+  background-size: cover;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  cursor: pointer;
+  visibility: hidden;
+}
+.scrollIcon:hover {
+  background-color: var(--color-secondary);
+}

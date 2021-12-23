@@ -1,0 +1,300 @@
+/* Welcome */
+.welcome {
+  background-color: var(--bg-primary);
+  height: 50vh;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  height: 50%;
+  padding-top: 10%;
+}
+
+.welcome h1 {
+  color: var(--text-light);
+  font-size: var(--fs-large);
+  margin-bottom: 60px;
+}
+
+.welcome p {
+  color: var(--text-light);
+  margin-bottom: 80px;
+}
+
+/* mobile nav */
+@media (max-width: 575px) {
+  .welcome h1 {
+    margin-top: 50px;
+    font-size: var(--fs-small);
+  }
+}
+
+/* About intro */
+
+.about-intro {
+  height: 40vh;
+}
+
+.about-intro .wrapper-intro {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-intro p {
+  width: 600px;
+  height: auto;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 60px;
+}
+
+.wrapper-intro img {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 60px;
+  height: 130px;
+  width: auto;
+}
+
+/* Mobile, paragraf, vh */
+@media (max-width: 860px) {
+  .wrapper-intro img {
+    width: 150px;
+    height: auto;
+  }
+  .wrapper-intro p {
+    width: 100%;
+  }
+
+  .about-intro .wrapper-intro {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .about-intro {
+    height: 60vh;
+  }
+}
+
+/* Container-fluid */
+
+.about-container {
+  min-height: 100vh;
+  width: 100%;
+}
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+/* Row 1 */
+.container-fluid .row1 {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.container-fluid .col2 {
+  background-image: url("https://cdn3.vectorstock.com/i/1000x1000/62/97/technology-background-with-circuit-board-elements-vector-1936297.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  width: calc(100% / 2);
+  height: 550px;
+  overflow: hidden;
+}
+
+.container-fluid .col1 {
+  width: calc(100% / 2);
+  height: 550px;
+  overflow: hidden;
+}
+
+/* mobile row1 */
+@media (max-width: 860px) {
+  .container-fluid .col1,
+  .container-fluid .col2 {
+    width: 100%;
+  }
+}
+@media (max-width: 570px) {
+  .container-fluid .col1,
+  .container-fluid .col2 {
+    height: 350px;
+  }
+}
+
+/* Stilizarea citat */
+.col2 .texts {
+  color: var(--text-light);
+  text-align: start;
+  width: 250px;
+  font-size: var(--fs-small);
+}
+
+/* Centrarea text */
+.col2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-fluid .col1 img {
+  width: 100%;
+  height: 100%;
+}
+
+.container-fluid .col1 img:hover {
+  transform: scale(1.1);
+  transition: 3s;
+}
+
+/* Row2, Row3 */
+.container-fluid .row2,
+.row3 {
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  outline-width: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Centrarea background-image */
+.container-fluid .col4,
+.container-fluid .row3 .col7,
+.container-fluid .row3 .col9 {
+  background-image: url("https://cdn3.vectorstock.com/i/1000x1000/62/97/technology-background-with-circuit-board-elements-vector-1936297.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Centrarea Citat */
+.container-fluid .col4,
+.container-fluid .col7,
+.container-fluid .col9 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* stilizarea text */
+.container-fluid .row2 .texts2,
+.container-fluid .row3 .texts3 {
+  color: var(--text-light);
+  text-align: start;
+  width: 250px;
+}
+
+/* Dimensionarea */
+.container-fluid .col3,
+.col4,
+.col5,
+.col6,
+.col7,
+.col8,
+.col9,
+.col10 {
+  width: calc(100% / 4);
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Mobile Row 2,3 */
+@media (max-width: 860px) {
+  .container-fluid .col3,
+  .col4,
+  .col5,
+  .col6,
+  .col7,
+  .col8,
+  .col9,
+  .col10 {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 575px) {
+  .container-fluid .col3,
+  .col4,
+  .col5,
+  .col6,
+  .col7,
+  .col8,
+  .col9,
+  .col10 {
+    width: 100%;
+  }
+}
+
+.col8 img,
+.col10 img,
+.col3 img,
+.col5 img,
+.col6 img {
+  height: 100%;
+  width: 100%;
+}
+
+.col8 img:hover,
+.col10 img:hover,
+.col3 img:hover,
+.col5 img:hover,
+.col6 img:hover {
+  transform: scale(1.1);
+  transition: 3s;
+}
+
+/* Stilizarea h3 */
+
+.container-fluid h3 {
+  color: var(--color-secondary);
+}
+
+
+/* Parteners Section */
+
+.parteners {
+  min-height: 80vh;
+  width: 100%;
+}
+
+.parteners h2 {
+  font-size: var(--fs-medium);
+  text-align: center;
+  color: var(--text-dark);
+  margin-top: 30px;
+}
+
+.parteners-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.wrapper-parteners {
+  width: calc(100vh / 5);
+  height: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding: 35px;
+}
+.wrapper-parteners {
+  filter: grayscale(100%);
+}
+.wrapper-parteners:hover {
+  filter: grayscale(0);
+}
+.wrapper-parteners img {
+  width: 100%;
+  height: 100%;
+}

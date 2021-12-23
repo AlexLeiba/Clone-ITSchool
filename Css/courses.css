@@ -1,0 +1,174 @@
+.coursesIt {
+  height: 50vh;
+  background-color: var(--bg-primary);
+}
+.coursesContainer {
+  padding-top: 10%;
+
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.coursesContainer h1 {
+  font-size: var(--fs-large);
+  margin-bottom: 40px;
+}
+.coursesContainer p {
+  color: var(--text-light);
+  margin-bottom: 20px;
+}
+
+/* mobile nav */
+@media (max-width: 575px) {
+  .coursesContainer h1 {
+    margin-top: 50px;
+    font-size: var(--fs-small);
+  }
+}
+
+.programul h3 {
+  text-align: center;
+  color: var(--text-dark);
+  font-size: var(--fs-medium);
+  margin-top: 30px;
+}
+.programul p {
+  text-align: start;
+  color: var(--text-dark);
+  margin-top: 30px;
+}
+
+/* Tipurile de cursuri */
+
+.cardContainer {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.cardWrapper {
+  width: calc(100% / 4);
+  height: auto;
+  padding: 10px;
+}
+
+/* wrapper mobile */
+
+@media (max-width: 1090px) {
+  .cardWrapper {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 825px) {
+  .cardWrapper {
+    width: calc(100% / 2);
+  }
+}
+@media (max-width: 575px) {
+  .cardWrapper {
+    width: 100%;
+  }
+}
+.card {
+  border: solid 2px rgb(211, 209, 209);
+  width: 100%;
+  height: auto;
+  padding-bottom: 10px;
+}
+.card img {
+  width: 100%;
+  height: auto;
+  padding: 2px;
+}
+
+.card h3 {
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: start;
+  font-size: var(--fs-small);
+  color: var(--text-dark);
+}
+
+/* Alinierea pe verticala elementelor inline */
+.card p img {
+  width: 80px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.card .adobe img {
+  width: 65px;
+  height: 25px;
+}
+
+.card p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.dateCourses {
+  display: flex;
+}
+
+.buttonCard {
+  margin-left: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  width: 100px;
+  height: auto;
+  background-color: var(--bg-dark);
+  border-radius: 4px;
+  border: solid 2px var(--bg-dark);
+  color: var(--bg-secondary);
+  text-align: center;
+  cursor: pointer;
+}
+.buttonCard:hover {
+  background-color: var(--text-light);
+  color: var(--text-dark);
+}
+
+.dateCourses .icons-date {
+  font-size: 15px;
+}
+.card .icons-clock {
+  font-size: 17px;
+}
+
+/* Paragraf  */
+
+.paragrafContainer {
+  min-height: 40vh;
+  width: 100%;
+  background-color: var(--bg-secondary);
+}
+.wrapperParagraf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 575px) {
+  .paragrafContainer .paragraf {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.paragrafContainer h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: var(--fs-medium);
+  color: var(--text-dark);
+}
+
+.paragrafContainer p {
+  margin-top: 30px;
+  text-align: center;
+  width: auto;
+  color: var(--text-dark);
+}

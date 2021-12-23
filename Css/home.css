@@ -1,0 +1,295 @@
+/* First Section */
+
+.WelcomeContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
+
+.homeIntro {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 15%;
+}
+
+.homeIntro h1 {
+  font-size: var(--fs-large);
+  color: var(--text-light);
+  margin-bottom: 80px;
+}
+
+.homeIntro p {
+  color: var(--text-light);
+  margin-bottom: 40px;
+}
+
+/* Alinierea pe verticala elementelor inline */
+.homeIntro img {
+  height: 35px;
+  width: auto;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.acolada {
+  color: var(--bg-secondary);
+  font-size: 25px;
+}
+
+.homeIntro .button {
+  width: 210px;
+  height: auto;
+  border-radius: 4px;
+  background-color: var(--bg-dark);
+
+  border: solid 2px var(--bg-dark);
+  cursor: pointer;
+
+  text-align: center;
+  padding: 12px;
+  color: var(--text-light);
+  text-transform: uppercase;
+}
+
+.homeIntro .button:hover {
+  background-color: var(--bg-primary);
+  color: var(--bg-secondary);
+}
+
+
+/* Section Courses */
+
+.coursesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  min-height: 50vh;
+}
+
+.Wrapper {
+  /* Daca vreau sa impart randul in procente, nu trebuie sa dau margin(left-right) trebuie de spatiat din interiorul elementului, deci spatiez cu padding */
+  width: calc(100% / 4);
+  height: 150px;
+  margin-bottom: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/* pentru mobile */
+@media (max-width: 1032px) {
+  .Wrapper {
+    width: calc(100% / 3);
+  }
+}
+
+@media (max-width: 790px) {
+  .Wrapper {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 550px) {
+  .Wrapper {
+    width: calc(100%);
+  }
+}
+
+.card {
+  width: 100%;
+  height: auto;
+
+  border: solid 1px rgb(219, 219, 219);
+  border-radius: 4px;
+}
+
+.courses h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: var(--fs-medium);
+}
+
+.card h2 {
+  text-align: start;
+  font-weight: 500;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: var(--fs-small);
+}
+
+/* Borders */
+.borderC,
+.borderAgile {
+  border-bottom: solid 5px rgb(209, 80, 41);
+  border-radius: 4px;
+}
+.borderTest,
+.borderUi {
+  border-bottom: solid 5px rgb(25, 170, 228);
+  border-radius: 4px;
+}
+.borderJava,
+.borderDesign {
+  border-bottom: solid 5px rgb(245, 241, 15);
+  border-radius: 4px;
+}
+.borderWeb,
+.borderPhyton {
+  border-bottom: solid 5px rgb(54, 155, 15);
+  border-radius: 4px;
+}
+
+.card .cardComponents {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+.card .cardComponents p {
+  margin-right: 15px;
+  margin-bottom: 15px;
+  margin-left: 8px;
+}
+
+/* Alinierea pe verticala elementelor inline */
+.card .cardComponents .material-icons {
+  font-size: 15px;
+  vertical-align: middle;
+  color: var(--bg-dark);
+}
+
+.card .dateContainer {
+  background-color: var(--color-secondary);
+  padding: 2px;
+  margin-right: 2px;
+  border-radius: 4px;
+}
+
+.buttonCourses {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+  background-color: var(--bg-dark);
+  border: solid 1px var(--bg-dark);
+  cursor: pointer;
+  text-align: center;
+  padding: 12px;
+  color: var(--bg-secondary);
+  font-size: 13px;
+}
+.buttonCourses:hover {
+  background-color: var(--text-light);
+  color: var(--bg-dark);
+}
+
+.buttonContainer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* About-us section */
+
+.about-us {
+  background-color: var(--bg-secondary);
+  min-height: 100vh;
+}
+
+.about-us .Container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.about-us h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: var(--fs-medium);
+}
+.about-us p {
+  padding-bottom: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.containerImages {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.containerImages .wrapper img:hover {
+  transform: scale(0.95);
+  transition: 3s;
+}
+
+/* Wrapper about-us */
+.containerImages .wrapper {
+  width: calc(100% / 3);
+  height: auto;
+
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+/* Child */
+.wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+/* mobile */
+@media (max-width: 790px) {
+  .containerImages .wrapper {
+    width: calc(100% / 2);
+  }
+}
+
+@media (max-width: 450px) {
+  .containerImages .wrapper {
+    width: calc(100%);
+  }
+}
+
+
+/* Parteners Section */
+
+.Parteners {
+  min-height: 70vh;
+}
+.Parteners h2 {
+  font-size: var(--fs-medium);
+  text-align: center;
+  margin-top: 30px;
+}
+.ContainerParteners {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ContainerParteners .wrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.ContainerParteners .wrapper img {
+  filter: grayscale(100%);
+}
+.ContainerParteners .wrapper img:hover {
+  filter: grayscale(0);
+}
+
+.ContainerParteners .wrapper {
+  width: 180px;
+  height: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
