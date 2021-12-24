@@ -1,3 +1,3 @@
 # Clone-ITSchool
 
-* Demo: clone-itschool-app.netlify.app
+* Demo: https://clone-itschool-app.netlify.app
