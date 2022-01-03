@@ -1,6 +1,12 @@
 // messenger
 const messButton = document.querySelector(".messageIcon");
 
+document.addEventListener("scroll", function () {
+  if (window.scrollY > 200) {
+    messButton.style.transform = "translateY(0px)";
+  }
+});
+
 messButton.addEventListener("click", function () {
   const messWindow = document.querySelector(".messageWindow");
 

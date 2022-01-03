@@ -1,4 +1,3 @@
-
 // scroll
 const scrollButton = document.querySelector(".scrollIcon");
 
@@ -10,9 +9,9 @@ scrollButton.addEventListener("click", function () {
 });
 document.addEventListener("scroll", function () {
   if (window.scrollY > 500) {
-    scrollButton.style.visibility = "visible";
+    scrollButton.style.transform = "translateY(0px)";
   } else {
-    scrollButton.style.visibility = "hidden";
+    scrollButton.style.transform = "translateY(100px)";
   }
 });
 
