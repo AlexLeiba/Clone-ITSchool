@@ -5,7 +5,7 @@
   --text-light: rgb(255, 255, 255);
   --color-secondary: rgb(255, 138, 43);
 
-  --bg-dark: rgb(4, 36, 143);
+  --bg-dark: rgb(1, 30, 128);
   --bg-primary: rgb(23, 28, 44);
   --bg-secondary: rgb(212, 246, 247);
 
@@ -122,11 +122,12 @@ nav .dropCourses {
   padding: 5px;
   display: none;
   width: 130px;
-  height: 175px;
+  height: 220px;
 }
 
 nav .dropCourses p {
-  padding-top: 5px;
+  padding-top: 2px;
+  margin-top: 9px;
   font-size: 13px;
 }
 
@@ -135,7 +136,8 @@ nav .dropCertification {
   top: 100%;
   left: 10px;
   width: 150px;
-  height: 80px;
+  height: 105px;
+
   background-color: var(--bg-dark);
   z-index: 1;
   padding: 5px;
@@ -145,8 +147,8 @@ nav .dropCertification {
 }
 
 nav .dropCertification p {
-  padding-top: 5px;
-  margin-right: 5px;
+  padding-top: 2px;
+  margin-top: 9px;
   font-size: 13px;
 }
 
@@ -158,7 +160,6 @@ nav .certification:hover .dropCertification {
   display: block;
 }
 /* .............................. ...........*/
-
 
 /* Menu-Mobile */
 
@@ -224,7 +225,6 @@ nav .certification:hover .dropCertification {
   }
 }
 
-
 /* main */
 
 main {
@@ -261,7 +261,6 @@ footer .footerContainer {
   margin-top: 80px;
   padding: 50px;
 }
-
 
 /* Mobile */
 @media (max-width: 650px) {
@@ -323,15 +322,14 @@ footer .footerContainer {
   color: var(--text-light);
 }
 
-
 /* Scroll button */
 
 .scrollIcon {
   width: 50px;
   height: 50px;
   background-color: var(--bg-secondary);
-  background-image: url("http://cdn.onlinewebfonts.com/svg/img_118804.png");
-  background-position: top;
+  background-image: url("https://www.freeiconspng.com/thumbs/up-arrow-png/black-up-arrow-png-6.png");
+  background-position: center;
   background-size: cover;
   border-radius: 50%;
   position: fixed;

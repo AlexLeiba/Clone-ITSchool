@@ -7,12 +7,14 @@
   height: 50vh;
 }
 
+/* Message */
+
 .messageIcon {
   position: fixed;
   bottom: 10px;
   right: 10px;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
 
   background-image: url("https://icones.pro/wp-content/uploads/2021/05/icone-messager-noir.png");
@@ -21,10 +23,93 @@
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
-
 }
-.messageIcon:hover{
+.messageIcon:hover {
   background-color: var(--color-secondary);
+}
+
+.messageWindow {
+  position: fixed;
+  bottom: 10px;
+  right: 85px;
+
+  width: 250px;
+  height: 260px;
+  padding: 10px;
+  margin: auto;
+  background-color: var(--text-light);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  opacity: 0;
+  box-shadow: 0px 0px 12px rgb(77, 77, 77);
+}
+
+.messageContent {
+  width: 95%;
+  height: 95%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.messageContent .icon-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.messageContent img {
+  width: 35px;
+  height: 35px;
+}
+
+.messageContent .circle span {
+  cursor: pointer;
+}
+
+.insideContent h4,
+.insideContent p {
+  margin-top: 15px;
+}
+
+.insideContent .div1,
+.insideContent .div2 {
+  padding: 8px;
+  width: 217px;
+  height: 38px;
+  background-color: rgb(197, 196, 196);
+  border-radius: 4px;
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+.insideContent .div1:hover,
+.insideContent .div2:hover {
+  background-color: rgb(107, 107, 107);
+  color: white;
+}
+
+.insideContent img {
+  position: absolute;
+  bottom: 33px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+}
+.messageWindow::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 15px solid var(--text-light);
+  position: absolute;
+  bottom: 10%;
+  right: -5%;
+  
 }
 
 .section1 h1 {
@@ -63,34 +148,32 @@
   width: 550px;
 }
 
-@media(max-width: 1150px){
+@media (max-width: 1150px) {
   .container1 {
-  width:400px;
-}
-.container2 {
-  width: 400px;
-}
+    width: 400px;
+  }
+  .container2 {
+    width: 400px;
+  }
 }
 
-@media(max-width: 860px){
-.containerTable{
-  flex-direction: column;
-  justify-content: center;
-}
+@media (max-width: 860px) {
+  .containerTable {
+    flex-direction: column;
+    justify-content: center;
+  }
   .container1 {
-  width:100%;
- 
-}
-.container2 {
-  width: 100%;
- 
-}
+    width: 100%;
+  }
+  .container2 {
+    width: 100%;
+  }
 }
 .section2 h2 {
   text-align: center;
   color: var(--text-dark);
- margin-top: 30px;
- 
+  margin-top: 30px;
+
   font-size: var(--fs-medium);
 }
 
@@ -101,7 +184,7 @@
 
 /* Container table */
 
-.containerTable{
+.containerTable {
   margin-top: 60px;
 }
 
@@ -112,7 +195,8 @@
   top: 20px;
 }
 
-.container1 a, .container2 a {
+.container1 a,
+.container2 a {
   color: var(--text-dark);
 }
 
@@ -124,7 +208,7 @@
 }
 
 /* Section Locations */
-.locatii{
+.locatii {
   min-height: 100vh;
   width: 100%;
 }
@@ -147,42 +231,39 @@
   height: 470px;
 }
 
-
 /* Mobile */
-@media(max-width: 1150px){
+@media (max-width: 1150px) {
   .colums img {
-    width:auto;
+    width: auto;
     height: 250px;
   }
 }
 
-@media(max-width: 860px){
-.colums img{
-  height: auto;
-  width: 250px;
+@media (max-width: 860px) {
+  .colums img {
+    height: auto;
+    width: 250px;
+  }
 }
 
+@media (max-width: 780px) {
+  .colums {
+    flex-direction: column;
+  }
+  .column1 div,
+  .column2 div {
+    width: 100%;
+  }
+
+  .colums img {
+    height: auto;
+    width: 480px;
+  }
 }
 
-@media(max-width:780px){
-  .colums{
-  flex-direction: column;
-
-}
-.column1 div,
-.column2 div{
-  width: 100%;
-}
-
-.colums img{
-  height: auto;
-  width: 480px;
-}
-}
-
-@media(max-width:500px){
-  .colums img{
-  height: auto;
-  width: 250px;
-}
+@media (max-width: 500px) {
+  .colums img {
+    height: auto;
+    width: 250px;
+  }
 }
